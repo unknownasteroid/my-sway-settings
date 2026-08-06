@@ -21,13 +21,14 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
         "keyboard-state",
         "sway/language",
+        "power-profiles-daemon",
+        // "cpu",
+        // "memory",
+        // "temperature",
+        // "backlight",
+        "battery#wattage",
         "battery",
         "battery#bat2",
         "tray",
@@ -134,6 +135,10 @@
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery#wattage": {
+        "interval": 10,
+        "format": "{power:.1f}W"
     },
     "battery": {
         "states": {

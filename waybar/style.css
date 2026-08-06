@@ -88,6 +88,7 @@ button:hover {
 #clock {
 }
 
+
 #battery {
 }
 
@@ -97,6 +98,11 @@ button:hover {
 
 #battery.critical:not(.charging) {
     background-color: #ff0000;
+}
+
+#battery.wattage {
+    background-color: #000000;
+    border-bottom: 3px solid #444444;
 }
 
 #power-profiles-daemon {
