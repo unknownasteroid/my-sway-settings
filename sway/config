@@ -258,3 +258,5 @@ default_floating_border pixel 3
 
 
 include /etc/sway/config.d/*
+
+exec_always --no-startup-id wayland-pipewire-idle-inhibit

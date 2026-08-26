@@ -137,7 +137,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery#wattage": {
-        "interval": 10,
+        "interval": 5,
         "format": "{power:.1f}W"
     },
     "battery": {
