@@ -113,6 +113,7 @@
         }
     },
     "clock#date": {
+        "interval": 60,
         "format": "{:%a %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
