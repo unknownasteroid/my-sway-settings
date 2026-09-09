@@ -2,11 +2,12 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    // "height": 0, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "clock#date",
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
@@ -14,7 +15,7 @@
         "sway/window"
     ],
     "modules-center": [
-        "clock"
+        "clock#time"
     ],
     "modules-right": [
         "mpd",
@@ -111,10 +112,13 @@
           "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         }
     },
-    "clock": {
-        // "timezone": "America/New_York",
+    "clock#date": {
+        "format": "{:%a %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+    },
+    "clock#time": {
+        "interval": 60,
+        "tooltip": false,
     },
     "cpu": {
         "format": "{usage}% ",
