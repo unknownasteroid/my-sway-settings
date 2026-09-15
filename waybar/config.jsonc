@@ -5,6 +5,7 @@
     // "height": 0, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
+
     // Choose the order of the modules
     "modules-left": [
         "clock#date",
@@ -18,11 +19,11 @@
         "clock#time"
     ],
     "modules-right": [
-        "mpd",
+        // "mpd",
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "keyboard-state",
+        // "keyboard-state",
         "sway/language",
         "power-profiles-daemon",
         // "cpu",
@@ -32,12 +33,12 @@
         "battery#wattage",
         "battery",
         "battery#bat2",
-        "tray",
+        // "tray",
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
+    "sway/workspaces": {
+        "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
     //     "format": "{name}: {icon}",
@@ -51,7 +52,7 @@
     //         "focused": "",
     //         "default": ""
     //     }
-    // },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
