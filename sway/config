@@ -230,6 +230,10 @@ bindsym $mod+r mode "resize"
 
     bindsym $mod+Shift+s exec systemctl suspend
 
+
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+
 #
 # Status Bar:
 #
